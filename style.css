@@ -15,6 +15,7 @@ body {
     justify-content: center;
     align-items: center;
     
+    
 }
 
 .marquee {
@@ -23,6 +24,7 @@ body {
     border-radius: 20px;
     font-family: 'Press Start 2P', cursive;
     padding: 10px;
+    white-space: nowrap;
     
 }
 
@@ -31,6 +33,24 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+
+.centerScreen {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faceOff {
+    padding-top: 64px;
+    font-size: 24px;
+
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    
+    
+}
+
 
 .choices {
     display: flex;
@@ -43,6 +63,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Press Start 2P', cursive;
     
 }
 
@@ -50,16 +71,17 @@ img {
     width: 100px;
     height: auto;
     border-radius: 20px;
-    border-style: outset;
+    
 }
 
 button {
     
     background-color: transparent;
-    
+    font-family: 'Press Start 2P', cursive; 
     border: none;
     font-size: 24px;
     color: black;
+    width: 200px;
 }
 
 .left,
@@ -72,21 +94,45 @@ button {
 
 .text {
     padding-bottom: 16px;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
 }
 
 .progressBar {
     height: 500px;
     width: 20px;
     border-radius: 13px;
-    background-color: black;
+    border-color: black;
+    border-style: solid;
     display: flex;
     flex-direction: column-reverse;
     
 }
 
-.rightFiller,
-.leftFiller {
-    background-color: blue;
-    height: 20%;
+#leftBar,
+#rightBar {
+    background-color: black;
+    height: 0;
     border-radius: 13px;
+}
+
+.pic {
+  padding: 5px;
+  font-size: 24px;
+  text-align: center;
+  
+  outline: none;
+  
+  background-color: black;
+  border: none;
+  border-radius: 15px;
+  
+}
+
+.pic:hover {background-color: rgb(149, 43, 158)}
+
+.pic:active {
+  
+  box-shadow:  5px black;
+  transform: translateY(4px);
 }
